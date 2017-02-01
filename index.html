@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FizzySlim</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	 <link href="style.css" rel="stylesheet">
+	 
+</head>
+<body>
+	<h1 class="text-uppercase text-center">cassa</h1>
+
+	<div class="container">
+
+	  <div class="row mt5p">
+
+	   	<div class="col-md-3">
+	   		<p class="text-center BebasNeueRegular fs36">pineapple</p>
+	   		<img src="images/img_pineapple.png" alt="pineapple" class="img-center">
+	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+	   		<p class="price text-center BebasNeueRegular">
+	   			<span  class="price"><span id="price_pineapple"></span>$</span>
+	   			<sup><del><span id="d_price_pineapple"></span>$</del></sup>
+	   		</p>
+	   		
+	   		<div class="text-center">
+		   		<div class="select" id="count_pineapple">
+		   			<input type="text" disabled="disabled" class="count" value="3" id="number_pineapple">
+		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
+		   		</div>
+				<button class="buy_button" id="buy_pineapple"></button>
+			</div>
+			<div class="product_count displ_none" id="slide_pineapple">
+				<ul class="li_hover">
+					<li class="numb_pineapple">1</li>
+					<li class="numb_pineapple">2</li>
+					<li class="numb_pineapple">3</li>
+					<li class="numb_pineapple">4</li>
+				</ul>
+			</div>
+	   	</div>
+
+	   	<div class="col-md-3">
+	   		<p class="text-center BebasNeueRegular fs36">berries</p>
+	   		<img src="images/img_berries.png" alt="berries" class="img-center">
+	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+	   		<p class="price text-center BebasNeueRegular">
+		   		<span class="price"><span id="price_berries"></span></span>
+		   		<sup><del><span id="d_price_berries"></span>$</del></sup>
+	   		</p>
+	   		
+	   		<div class="text-center">
+		   		<div class="select" id="count_berries">
+		   			<input type="text" disabled="disabled" class="count" value="3" id="number_berries">
+		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
+		   		</div>
+				<button class="buy_button" id="buy_berries"></button>
+			</div>
+			<div class="product_count displ_none" id="slide_berries">
+				<ul class="li_hover">
+					<li class="numb_berries">1</li>
+					<li class="numb_berries">2</li>
+					<li class="numb_berries">3</li>
+					<li class="numb_berries">4</li>
+				</ul>
+			</div>
+	   	</div>
+
+	   	<div class="col-md-3">
+	   		<p class="text-center BebasNeueRegular fs36">graipfruit</p>
+	   		<img src="images/img_graipfruit.png" alt="graipfruit" class="img-center">
+	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+	   		<p class="price text-center BebasNeueRegular">
+	   			<span  class="price">$<span id="price_graipfruit"></span></span>
+				<sup><del><span id="d_price_graipfruit"></span>$</del></sup>
+	   		</p>
+	   		
+	   		<div class="text-center">
+		   		<div class="select" id="count_graipfruit">
+		   			<input type="text" disabled="disabled" class="count" value="3" id="number_graipfruit">
+		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
+		   		</div>
+				<button class="buy_button" id="buy_graipfruit"></button>
+			</div>
+			<div class="product_count displ_none" id="slide_graipfruit">
+				<ul class="li_hover">
+					<li class="numb_graipfruit">1</li>
+					<li class="numb_graipfruit">2</li>
+					<li class="numb_graipfruit">3</li>
+					<li class="numb_graipfruit">4</li>
+				</ul>
+			</div>
+	   	</div>
+
+	   	<div class="col-md-3">
+	   		<p class="text-center BebasNeueRegular fs36">apple</p>
+	   		<img src="images/img_apple.png" alt="apple" class="img-center">
+	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+	   		<p class="price text-center BebasNeueRegular">
+		   		<span>$</span><span id="price_apple"></span>
+		   		<sup><del><span id="d_price_apple"></span>$</del></sup>
+	   		</p>
+	   		<div class="text-center" >
+		   		<div class="select" id="count_apple">
+		   			<input type="text" disabled="disabled" class="count" value="3" id="number_apple">
+		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
+		   		</div>
+				<button class="buy_button" id="buy_apple">
+					<!-- <img src="images/buy.png" alt="" > -->
+				</button>
+			</div>
+			<div class="product_count displ_none" id="slide_apple">
+				<ul class="li_hover">
+					<li class="numb_apple">1</li>
+					<li class="numb_apple">2</li>
+					<li class="numb_apple">3</li>
+					<li class="numb_apple">4</li>
+				</ul>
+			</div>
+			<div class="div_footer">
+				
+			</div>
+	   	</div>
+
+	  </div>
+
+	  <div class="col-md-12 mt-20 doska w105p">
+	  	<!-- <img src="images/doska.png" alt="" class="w100p"> -->
+	  </div>
+		
+	</div>
+	<div id="carello">
+		<div id="carello_head">
+			<p class="white BebasNeueRegular fs60" id="carello_p">
+				<img src="images/arrow1.png" alt="close carello" class="ml cursor" id="close_carello">
+				<span class="text-uppercase ml80">carello</span>
+			</p>
+		</div>
+		<div id="list_carello">
+			<div class="one_position">
+				<div class="ml30">
+					<img src="images/img_graipfruit.png" alt="" class="small_img">
+				</div>
+				<p>aaa</p>
+			</div>
+			<button id="vis_carello" class="white text-uppercase">visualizza carello</button>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+</html>
+
