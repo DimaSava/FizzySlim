@@ -6,150 +6,159 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	 <link href="style.css" rel="stylesheet">
-	 
+	<link href="style.css" rel="stylesheet">
+
 </head>
 <body>
 	<h1 class="text-uppercase text-center">cassa</h1>
 
-	<div class="container">
+	<div class="container mb200">
 
-	  <div class="row mt5p">
+		<div class="row cards mt5p">
 
-	   	<div class="col-md-3">
-	   		<p class="text-center BebasNeueRegular fs36">pineapple</p>
-	   		<img src="images/img_pineapple.png" alt="pineapple" class="img-center">
-	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
-	   		<p class="price text-center BebasNeueRegular">
-	   			<span  class="price"><span id="price_pineapple"></span>$</span>
-	   			<sup><del><span id="d_price_pineapple"></span>$</del></sup>
-	   		</p>
-	   		
-	   		<div class="text-center">
-		   		<div class="select" id="count_pineapple">
-		   			<input type="text" disabled="disabled" class="count" value="3" id="number_pineapple">
-		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
-		   		</div>
-				<button class="buy_button" id="buy_pineapple"></button>
-			</div>
-			<div class="product_count displ_none" id="slide_pineapple">
-				<ul class="li_hover">
-					<li class="numb_pineapple">1</li>
-					<li class="numb_pineapple">2</li>
-					<li class="numb_pineapple">3</li>
-					<li class="numb_pineapple">4</li>
-				</ul>
-			</div>
-	   	</div>
-
-	   	<div class="col-md-3">
-	   		<p class="text-center BebasNeueRegular fs36">berries</p>
-	   		<img src="images/img_berries.png" alt="berries" class="img-center">
-	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
-	   		<p class="price text-center BebasNeueRegular">
-		   		<span class="price"><span id="price_berries"></span></span>
-		   		<sup><del><span id="d_price_berries"></span>$</del></sup>
-	   		</p>
-	   		
-	   		<div class="text-center">
-		   		<div class="select" id="count_berries">
-		   			<input type="text" disabled="disabled" class="count" value="3" id="number_berries">
-		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
-		   		</div>
-				<button class="buy_button" id="buy_berries"></button>
-			</div>
-			<div class="product_count displ_none" id="slide_berries">
-				<ul class="li_hover">
-					<li class="numb_berries">1</li>
-					<li class="numb_berries">2</li>
-					<li class="numb_berries">3</li>
-					<li class="numb_berries">4</li>
-				</ul>
-			</div>
-	   	</div>
-
-	   	<div class="col-md-3">
-	   		<p class="text-center BebasNeueRegular fs36">graipfruit</p>
-	   		<img src="images/img_graipfruit.png" alt="graipfruit" class="img-center">
-	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
-	   		<p class="price text-center BebasNeueRegular">
-	   			<span  class="price">$<span id="price_graipfruit"></span></span>
-				<sup><del><span id="d_price_graipfruit"></span>$</del></sup>
-	   		</p>
-	   		
-	   		<div class="text-center">
-		   		<div class="select" id="count_graipfruit">
-		   			<input type="text" disabled="disabled" class="count" value="3" id="number_graipfruit">
-		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
-		   		</div>
-				<button class="buy_button" id="buy_graipfruit"></button>
-			</div>
-			<div class="product_count displ_none" id="slide_graipfruit">
-				<ul class="li_hover">
-					<li class="numb_graipfruit">1</li>
-					<li class="numb_graipfruit">2</li>
-					<li class="numb_graipfruit">3</li>
-					<li class="numb_graipfruit">4</li>
-				</ul>
-			</div>
-	   	</div>
-
-	   	<div class="col-md-3">
-	   		<p class="text-center BebasNeueRegular fs36">apple</p>
-	   		<img src="images/img_apple.png" alt="apple" class="img-center">
-	   		<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
-	   		<p class="price text-center BebasNeueRegular">
-		   		<span>$</span><span id="price_apple"></span>
-		   		<sup><del><span id="d_price_apple"></span>$</del></sup>
-	   		</p>
-	   		<div class="text-center" >
-		   		<div class="select" id="count_apple">
-		   			<input type="text" disabled="disabled" class="count" value="3" id="number_apple">
-		   			<i class="glyphicon glyphicon-triangle-bottom white"></i>
-		   		</div>
-				<button class="buy_button" id="buy_apple">
-					<!-- <img src="images/buy.png" alt="" > -->
-				</button>
-			</div>
-			<div class="product_count displ_none" id="slide_apple">
-				<ul class="li_hover">
-					<li class="numb_apple">1</li>
-					<li class="numb_apple">2</li>
-					<li class="numb_apple">3</li>
-					<li class="numb_apple">4</li>
-				</ul>
-			</div>
-			<div class="div_footer">
-				
-			</div>
-	   	</div>
-
-	  </div>
-
-	  <div class="col-md-12 mt-20 doska w105p">
-	  	<!-- <img src="images/doska.png" alt="" class="w100p"> -->
-	  </div>
-		
-	</div>
-	<div id="carello">
-		<div id="carello_head">
-			<p class="white BebasNeueRegular fs60" id="carello_p">
-				<img src="images/arrow1.png" alt="close carello" class="ml cursor" id="close_carello">
-				<span class="text-uppercase ml80">carello</span>
-			</p>
-		</div>
-		<div id="list_carello">
-			<div class="one_position">
-				<div class="ml30">
-					<img src="images/img_graipfruit.png" alt="" class="small_img">
+			<div class="card col-md-3">
+				<p class="text-center BebasNeueRegular fs36">pineapple</p>
+				<div class="imgs">
+					<img src="images/img_pineapple.png" alt="pineapple" class="img-center">
+					<img src="images/doska.png" class="doska-xs hidden-lg hidden-md">
 				</div>
-				<p>aaa</p>
+				<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+				<p class="price text-center BebasNeueRegular">
+					<span  class="price"><span id="price_pineapple"></span>$</span>
+					<sup><del><span id="d_price_pineapple"></span>$</del></sup>
+				</p>
+
+				<div class="text-center pb30">
+					<div class="select" id="count_pineapple">
+						<input type="text" disabled="disabled" class="count" value="3" id="number_pineapple">
+						<i class="glyphicon glyphicon-triangle-bottom white"></i>
+					</div>
+					<button class="buy_button" id="buy_pineapple"></button>
+					<div class="product_count displ_none" id="slide_pineapple">
+						<ul class="li_hover">
+							<li class="numb_pineapple">1</li>
+							<li class="numb_pineapple">2</li>
+							<li class="numb_pineapple">3</li>
+							<li class="numb_pineapple">4</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="card col-md-3">
+				<p class="text-center BebasNeueRegular fs36">berries</p>
+				<div class="imgs">
+					<img src="images/img_berries.png" alt="pineapple" class="img-center">
+					<img src="images/doska.png" class="doska-xs hidden-lg hidden-md">
+				</div>
+				<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+				<p class="price text-center BebasNeueRegular">
+					<span class="price"><span id="price_berries"></span></span>
+					<sup><del><span id="d_price_berries"></span>$</del></sup>
+				</p>
+
+				<div class="text-center pb30">
+					<div class="select" id="count_berries">
+						<input type="text" disabled="disabled" class="count" value="3" id="number_berries">
+						<i class="glyphicon glyphicon-triangle-bottom white"></i>
+					</div>
+					<button class="buy_button" id="buy_berries"></button>
+					<div class="product_count displ_none" id="slide_berries">
+						<ul class="li_hover">
+							<li class="numb_berries">1</li>
+							<li class="numb_berries">2</li>
+							<li class="numb_berries">3</li>
+							<li class="numb_berries">4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="card col-md-3">
+				<p class="text-center BebasNeueRegular fs36">graipfruit</p>
+				<div class="imgs">
+					<img src="images/img_graipfruit.png" alt="pineapple" class="img-center">
+					<img src="images/doska.png" class="doska-xs hidden-lg hidden-md">
+				</div>
+				<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+				<p class="price text-center BebasNeueRegular">
+					<span  class="price">$<span id="price_graipfruit"></span></span>
+					<sup><del><span id="d_price_graipfruit"></span>$</del></sup>
+				</p>
+
+				<div class="text-center pb30">
+					<div class="select" id="count_graipfruit">
+						<input type="text" disabled="disabled" class="count" value="3" id="number_graipfruit">
+						<i class="glyphicon glyphicon-triangle-bottom white"></i>
+					</div>
+					<button class="buy_button" id="buy_graipfruit"></button>
+					<div class="product_count displ_none" id="slide_graipfruit">
+						<ul class="li_hover">
+							<li class="numb_graipfruit">1</li>
+							<li class="numb_graipfruit">2</li>
+							<li class="numb_graipfruit">3</li>
+							<li class="numb_graipfruit">4</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="card col-md-3">
+				<p class="text-center BebasNeueRegular fs36">apple</p>
+				<div class="imgs">
+					<img src="images/img_apple.png" alt="pineapple" class="img-center">
+					<img src="images/doska.png" class="doska-xs hidden-lg hidden-md">
+				</div>
+				<p class="mt50 text-center BebasNeueRegular fs26">offerta limitata -50%</p>
+				<p class="price text-center BebasNeueRegular">
+					<span>$</span><span id="price_apple"></span>
+					<sup><del><span id="d_price_apple"></span>$</del></sup>
+				</p>
+				<div class="text-center pb30" >
+					<div class="select" id="count_apple">
+						<input type="text" disabled="disabled" class="count" value="3" id="number_apple">
+						<i class="glyphicon glyphicon-triangle-bottom white"></i>
+					</div>
+					<button class="buy_button" id="buy_apple">
+						<!-- <img src="images/buy.png" alt="" > -->
+					</button>
+					<div class="product_count displ_none" id="slide_apple">
+						<ul class="li_hover">
+							<li class="numb_apple">1</li>
+							<li class="numb_apple">2</li>
+							<li class="numb_apple">3</li>
+							<li class="numb_apple">4</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="container doska visible-lg visible-md">
+			</div>
+		</div>
+	</div>
+
+	<div id="carello" class="hidden">
+		<div class="carello_body">
+			<div id="carello_head">
+				<p class="white BebasNeueRegular fs60" id="carello_p">
+					<img src="images/arrow1.png" alt="close carello" class="ml cursor" id="close_carello">
+					<span class="text-uppercase ml80">carello</span>
+				</p>
+			</div>
+			<div id="list_carello">
+				<div class="one_position">
+					<div class="ml30">
+						<img src="images/img_graipfruit.png" alt="" class="small_img">
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nesciunt placeat debitis consectetur provident vero aspernatur sed molestiae expedita recusandae doloremque, commodi officia in pariatur, libero obcaecati porro, incidunt corporis. Praesentium aliquam rem fugit sit corporis, mollitia, distinctio porro alias voluptatum ab laborum, veniam. Voluptas temporibus ut cum, iure quod sunt explicabo alias asperiores esse autem. Facere similique aliquid sint impedit eligendi ipsam, eum molestiae, ut a laborum expedita quo ea! Suscipit deleniti molestiae nemo consequuntur laboriosam iure, quos eligendi voluptatibus deserunt et. Rerum omnis veritatis, aspernatur, illo aliquid optio dolorem, quo nobis dolore fugiat quibusdam. Fugiat, at, mollitia. Ipsum facilis soluta, provident pariatur, repudiandae natus illum nostrum officiis eum ipsa, voluptate facere magni qui ex quibusdam, sed recusandae voluptatum. Expedita unde ea possimus tenetur suscipit aliquam ex, eum quasi reprehenderit odio sint nulla sequi hic, non dolor veniam consequuntur. Illo placeat officia est accusamus quasi nemo pariatur porro alias, esse at aliquid repellendus asperiores quam eius reprehenderit accusantium ipsam blanditiis, maiores aperiam optio distinctio numquam voluptatibus. Eum, atque tempora. Corporis repudiandae itaque, nulla sit placeat laudantium iure animi vero asperiores rerum vel ea voluptatibus quasi nostrum perferendis ab sequi blanditiis nihil tempore adipisci qui quas nam. Reprehenderit minus impedit, voluptates ex deleniti ducimus repellendus aliquid assumenda voluptate ut. Necessitatibus veritatis laboriosam quas officiis mollitia sint, laborum quibusdam. Fuga nulla distinctio sequi quo quis ab eveniet suscipit consectetur magnam adipisci perferendis impedit quas est facilis atque vitae, animi totam! Aut officiis ratione vero blanditiis harum officia impedit, placeat neque repellat soluta, sed eveniet ut iste? Qui distinctio deserunt enim rem eligendi ratione a unde, labore impedit dolores, et minus! Eligendi qui id itaque eius vel culpa maxime, quaerat inventore omnis nesciunt sint quo rerum blanditiis nostrum, animi cum totam. Explicabo consectetur quibusdam harum inventore ut error eligendi repellat nobis perferendis dolores dolore ad pariatur a, nulla culpa enim quis repudiandae asperiores vero. Provident accusantium amet eaque quisquam, ipsam, repudiandae quod non in impedit eligendi suscipit sit blanditiis, quam fuga sed quasi, illo veritatis animi sint. Recusandae, aut voluptates consequuntur esse, quod repellendus accusamus voluptatibus, optio nostrum sit error adipisci a suscipit possimus. Deleniti soluta nisi tenetur commodi dolore nesciunt vero ea rem voluptas id delectus nostrum, tempore similique quam, in reprehenderit fuga libero exercitationem unde at possimus quibusdam explicabo. Numquam nesciunt sunt minima. Exercitationem repudiandae a doloremque hic aliquid tempora dolorem facere, repellat vero placeat inventore eos dicta. Pariatur eius, perferendis libero. Velit possimus numquam illo debitis, cupiditate officiis consequuntur minima explicabo nulla quo qui consequatur dolor in, corporis esse assumenda magni voluptates totam rerum dolorem enim ratione corrupti. Nostrum vel consectetur, non debitis laborum ipsam iusto ab quae rem accusamus voluptas suscipit eum nobis earum aperiam tenetur illo omnis quam quidem laboriosam nulla asperiores corporis quibusdam. Architecto sunt aliquid repellat consequuntur magni, nam vel, perferendis amet ducimus dignissimos consequatur vero nobis exercitationem ipsam quidem earum, asperiores recusandae reiciendis in nulla. Ipsam debitis assumenda at aspernatur fugiat dolor vel, eligendi laboriosam numquam ipsum illum, sint saepe enim officiis inventore cupiditate.</p>
+				</div>
 			</div>
 			<button id="vis_carello" class="white text-uppercase">visualizza carello</button>
 		</div>
@@ -159,4 +168,3 @@
 
 </body>
 </html>
-

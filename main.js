@@ -25,67 +25,90 @@ var d_price_pineapple = (pr_pineapple*2).toFixed(2);
 $('#d_price_pineapple').text(d_price_pineapple);
 
 // slide count for product
-	$('.select').click(function(event) {
-		console.log('click');
-		$('.product_count').slideUp();
-		var name_product = $(this).attr('id').split('_')[1];
-		$('.corp_orange_bg').removeClass('corp_orange_bg');
-		if ($('#slide_' + name_product).hasClass('sliding')) {
-			// console.log($('#slide_' + name_product)); big?????????????????/
-			// console.log($(this));
-			$('#slide_' + name_product).slideUp();
-			$('#slide_' + name_product).removeClass('sliding');
-			$('#buy_' + name_product).removeClass('corp_orange_bg'); 
-		}
-		else {
-			$('#slide_' + name_product).addClass('sliding');
-			$('#slide_' + name_product).slideDown();
-			$('#buy_' + name_product).addClass('corp_orange_bg');
-		}
-		event.stopPropagation();
-	});
+$('.select').click(function(event) {
+	console.log('click');
+	$('.product_count').slideUp();
+	var name_product = $(this).attr('id').split('_')[1];
+	$('.corp_orange_bg').removeClass('corp_orange_bg');
+	if ($('#slide_' + name_product).hasClass('sliding')) {
+		// console.log($('#slide_' + name_product)); big?????????????????/
+		// console.log($(this));
+		$('#slide_' + name_product).slideUp();
+		$('#slide_' + name_product).removeClass('sliding');
+		$('#buy_' + name_product).removeClass('corp_orange_bg');
+	}
+	else {
+		$('#slide_' + name_product).addClass('sliding');
+		$('#slide_' + name_product).slideDown();
+		$('#buy_' + name_product).addClass('corp_orange_bg');
+	}
+	event.stopPropagation();
+});
 // hide count for product
-	// коряво работает(боди не боди :) )
-	$('body:not(.select)').click(function() {  
-		$('.product_count').slideUp();
-		$('.corp_orange_bg').removeClass('corp_orange_bg');
-	});
+
+$('body:not(.select)').click(function() {
+	$('.product_count').slideUp();
+	$('.corp_orange_bg').removeClass('corp_orange_bg');
+});
 // choose count for product
-	$('li').click(function() {
-		console.log($(this).attr('class'));
-		var input_id = 'number_' + $(this).attr('class').split('_')[1];
-		console.log(input_id);
-		$('#' + input_id).val(+$(this).text());
-		$('.product_count').slideUp();
-	});
+$('li').click(function() {
+	console.log($(this).attr('class'));
+	var input_id = 'number_' + $(this).attr('class').split('_')[1];
+	console.log(input_id);
+	$('#' + input_id).val(+$(this).text());
+	$('.product_count').slideUp();
+});
 
 // visible carello
-	$('.buy_button').click(function(event) {
-		if ($('#carello').hasClass('visible')) {
-			$('#carello').hide();
-			$('#carello').removeClass('visible');
-		}
-		else {
-			$('#carello').show('slow');
-			$('#carello').addClass('visible');
-		}
-		event.stopPropagation();
+// 	$('.buy_button').click(function(event) {
+// 		if ($('#carello').hasClass('visible')) {
+// 			$('#carello').hide();
+// 			$('#carello').removeClass('visible');
+// 		}
+// 		else {
+// 			$('#carello').show('slow');
+// 			$('#carello').addClass('visible');
+// 		}
+// 		event.stopPropagation();
+// 	});
+// // hide carello
+// 	$('#close_carello').click(function() {
+// 		$('#carello').hide('slow');
+// 		$('#carello').removeClass('visible');
+// 	});
+// 	// click body (hide carello)
+// 	$('body:not(#carello)').click(function() {
+// 		if($('#carello').hasClass('visible')) {
+// 			$('#carello').hide('slow');
+// 			$('#carello').removeClass('visible');
+// 		}
+// 		// $('.corp_orange_bg').removeClass('corp_orange_bg');
+// 	});
+
+
+var a = $('.buy_button');
+var b = $('#carello');
+$('#carello').height($(document).height());
+a.click(function (e) {
+	$('.carello_body').animate({
+		right: "+=470",
+	}, 1000);
+	b.removeClass('hidden').addClass('visible');
+	$('body').addClass('over');
+});
+
+$('#carello').click(function (e) {
+	$('#list_carello, #vis_carello').click(function(ev){ev.stopPropagation()});
+	$('.carello_body').animate({
+		right: "-=470",
+	}, 250 , function(){
+		b.removeClass('visible').addClass('hidden');
+		$('body').removeClass('over');
 	});
-// hide carello
-	$('#close_carello').click(function() {
-		$('#carello').hide('slow');
-		$('#carello').removeClass('visible');
-	});
-	// click body (hide carello)
-	$('body:not(#carello)').click(function() {
-		if($('#carello').hasClass('visible')) {
-			$('#carello').hide('slow');
-			$('#carello').removeClass('visible');
-		}
-		// $('.corp_orange_bg').removeClass('corp_orange_bg');
-	});
+});
+
 
 // add count in carello
-	function add_to_carello(product, count_product) {
-		
-	}
+function add_to_carello(product, count_product) {
+
+}
